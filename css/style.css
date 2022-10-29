@@ -1,10 +1,15 @@
 /* General styles */
 
 :root {
-  --main-color: #FFFFFF;
-  --primary-second-title-color: #212121;
+  --main-color: #ffffff;
+  --primary-title-color: #212121;
   --primary-text-color: #757575;
   --accent-color: #2196f3;
+  --black-logo: #000000;
+  --primary-bg-color: #2f303a;
+  --team-bg-color: #f5f4fa;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+  --button-shadow: rgba(0, 0, 0, 0.15);
 }
 
 .body {
@@ -19,23 +24,61 @@
   list-style: none;
 }
 
+.text {
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.hero,
+.footer {
+  background-color: var(--primary-bg-color);
+}
+
+/* Header styles */
+.header {
+  background-color: var(--main-color);
+}
+
+.logo-web,
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+
+.text,
+.header-contact-link {
+  color: var(--primary-text-color);
+}
+
+/* WebStudio logo styles */
+.logo-studio-bl {
+  color: var(--black-logo);
+}
+
+.logo-studio-wh {
+  color: var(--main-color);
+}
+
 .webstudio-link {
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
 }
 
-.logo-web {
-  color: var(--accent-color)
-}
-
-.logo-studio-black {
-  color: #000000;
-}
-
-.logo-studio-white {
-  color: var(--main-color);
+/* Title styles */
+.header-list-link,
+.second-title,
+.third-title {
+  color: var(--primary-title-color);
 }
 
 .second-title {
@@ -46,49 +89,7 @@
   letter-spacing: 0.03em;
 }
 
-.second-title, 
-.third-title,
-.header-list-link {
-    color: var(--primary-second-title-color)
-}
-
-.text {
-font-weight: 400;
-letter-spacing: 0.03em;
-color: var(--primary-text-color)
-}
-
-/* Header styles */
-.header {
-  background-color: var(--main-color);
-}
-
-.header-list-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-}
-
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color)
-}
-
-.header-contact-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 12);
-  letter-spacing: 0.02em;
-  color: #757575;
-}
-
-.hero,
-.footer {
-  background-color: #2f303a;
-}
-
-/* Hero styles */
+/* Hero */
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -109,9 +110,10 @@ color: var(--primary-text-color)
   letter-spacing: 0.06em;
   color: var(--main-color);
   background: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px var(--button-shadow);
   border-radius: 4px;
   font-family: inherit;
+  cursor: pointer;
 }
 
 /* Benefits styles */
@@ -139,13 +141,16 @@ color: var(--primary-text-color)
 .benefits-text {
   font-size: 14px;
   line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
 }
 
 /* Services styles */
 
-
 /* Team styles */
-.team-name-title {
+.team {
+  background-color: var(--team-bg-color);
+}
+.team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -160,25 +165,19 @@ color: var(--primary-text-color)
 }
 
 /* Footer styles */
-.footer {
-  width: 1600px;
-  height: 252px;
-  left: 0px;
-  top: 2094px;
-}
-
-.footer-contact-link {
+.footer-list {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
 
-.footer-map-link {
-color: var(--main-color);
+.footer-map {
+  color: var(--main-color);
 }
 
-.footer-tel-link,
-.footer-mail-link {
-  color: rgba(255, 255, 255, 0.6);
+.footer-tel,
+.footer-mail {
+  color: var(--footer-link-color);
 }
