@@ -41,11 +41,11 @@
 
 .logo-web,
 .header-link.current,
-.portfolio-button.primary,
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
 }
+
 
 .header-link {
   font-weight: 500;
@@ -138,6 +138,10 @@
   background: var(--team-bg-color);
 }
 
+.portfolio-button.secondary:hover,
+.portfolio-button.secondary:focus {
+  color: var(--accent-color);
+}
 /* Benefits styles */
 .visually-hidden {
   position: absolute;
@@ -220,3 +224,4 @@
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+
