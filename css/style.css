@@ -41,7 +41,8 @@
 
 .logo-web,
 .header-link.current,
-.button.button.current .header-link:hover,
+.portfolio-button.primary,
+.header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
 }
